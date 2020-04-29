@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+  margin: 3px;
+}
+
+input {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  background-color: #3a506b;
+  border: 1px solid #3a506b;
+}
+textarea {
+  width: 75%;
+  height: 100px;
+  overflow: scroll;
+}
+
+button {
+  margin: 10px;
+  height: 40px;
+  font-size: 22px;
+  font-weight: 900;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.Button_Reset { 
+  background-color: rgb(170, 7, 7);
+  border: 1px solid rgb(170, 7, 7);
+}
+
+.Button_Submit {
+  background-color: rgb(60, 136, 235);
+  border: 1px solid rgb(60, 136, 235);
+}
+div .CoordinateContainer {
+  background-color: #3a506b;
+}
+
+.CoordinateContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: left;
+}
+
+.CoordinateContainer li {
+  flex: wrap;
+  border: 1px solid lightgray;
+  box-shadow: 0px 1px 0px lightgray;
+}
+
+.UnitContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.UnitContainer .UnitItem {
+  margin-right: 10px;
+}
+
+.CoordinateEntryContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.CoordinateEntry {
+  flex: wrap;
+  margin: 10px 25% 10px 25%;
+  background-color: #0b132b;
+  padding: 15px 30px 15px 30px;
+}
+label.CoordinateLabel {
+  margin-right: 5px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  button {
+    background-color: limegreen;
+  }
+  .CoordinateEntryContainer{
+    flex-direction: row-reverse;
+  }
+  .CoordinateEntry {
+    margin: 10px 10px 10px 10px;
+  }
+}
